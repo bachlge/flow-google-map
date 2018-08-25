@@ -29,12 +29,7 @@ public class AboutView extends Composite<Div> {
         Paragraph content = new Paragraph();
         content.add(new H3("Welcome to this small Vaadin Flow application."));
         content.add(new Span("See how simple it is to include (well documented) WebComponents into your Vaadin Application."));
-        content.add(new Span("See how simple it is to include (well documented) WebComponents into your Vaadin Application."));
-/*
-        		+ "In this example the 'google-map', see https://www.webcomponents.org/element/GoogleWebComponents/google-map"
-        		+ "is used."
-        		+ "");
-*/
+
         String route = UI.getCurrent().getRouter().getUrl(XGoogleMapView.class);
         Anchor link = new Anchor(route, "Navigate to the Map");
 
