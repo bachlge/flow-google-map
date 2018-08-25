@@ -1,0 +1,16 @@
+
+h1 {
+	color: skyblue !important;
+	margin-top: .25em;
+}
+
+h2 {
+	color: red !important;
+}
+
+.copyright {
+	font-size: small;
+	color: royalblue;
+	background-color: aliceblue;	
+}
+
