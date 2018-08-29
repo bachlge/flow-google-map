@@ -14,7 +14,7 @@ import com.vaadin.flow.router.Route;
 
 @SuppressWarnings("serial")
 @PageTitle("°°°Google Maps Experiments°°°")
-@Route(value="X-Google-Map", layout=MainView.class)
+@Route(value = "X-Google-Map", layout = MainView.class)
 public class XGoogleMapView extends Composite<Div> {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(XGoogleMapView.class);
@@ -24,24 +24,24 @@ public class XGoogleMapView extends Composite<Div> {
 	public XGoogleMapView() {
 		LOGGER.info("Constructor ...");
 
-        H1 title = new H1("Google Mapz");
+		H1 title = new H1("Google Mapz");
 
-        GoogleMapMarker marker = new GoogleMapMarker();
-        marker.setLatitude(62);
-        marker.setLongitude(24);
-        marker.setDraggable(true);
+		GoogleMapMarker marker = new GoogleMapMarker();
+		marker.setLatitude(62);
+		marker.setLongitude(24);
+		marker.setDraggable(true);
 
-        GoogleMap map = new GoogleMap(API_KEY);
-        map.setLatitude(62);
-        map.setLongitude(24);
+		GoogleMap map = new GoogleMap(API_KEY);
+		map.setLatitude(62);
+		map.setLongitude(24);
 
-        map.addMarker(marker);
+		map.addMarker(marker);
 
-        Paragraph copyright = new Paragraph();
+		Paragraph copyright = new Paragraph();
 		copyright.setText("(c) Gork 2018");
 		copyright.addClassName("copyright");
 
-        getContent().add(title, map, copyright);
-    }
+		getContent().add(title, map, copyright);
+	}
 
 }
